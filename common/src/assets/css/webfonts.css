@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'Upgrade-Hairline_Italic';
+  src: url('../fonts/Upgrade-Hairline_Italic.eot') format('eot'),
+    url('../fonts/Upgrade-Hairline_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Hairline_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-Thin';
+  src: url('../fonts/Upgrade-Thin.eot') format('eot'), url('../fonts/Upgrade-Thin.woff2') format('woff2'),
+    url('../fonts/Upgrade-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Upgrade-Thin_Italic';
+  src: url('../fonts/Upgrade-Thin_Italic.eot') format('eot'), url('../fonts/Upgrade-Thin_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Thin_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-Thin';
+  src: url('../fonts/Upgrade-Thin.eot') format('eot'), url('../fonts/Upgrade-Thin.woff2') format('woff2'),
+    url('../fonts/Upgrade-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Upgrade-ExtraLight_Italic';
+  src: url('../fonts/Upgrade-ExtraLight_Italic.eot') format('eot'),
+    url('../fonts/Upgrade-ExtraLight_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-ExtraLight_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-ExtraLight';
+  src: url('../fonts/Upgrade-ExtraLight.eot') format('eot'), url('../fonts/Upgrade-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Upgrade-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Upgrade-Light_Italic';
+  src: url('../fonts/Upgrade-Light_Italic.eot') format('eot'),
+    url('../fonts/Upgrade-Light_Italic.woff2') format('woff2'), url('../fonts/Upgrade-Light_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-Light';
+  src: url('../fonts/Upgrade-Light.eot') format('eot'), url('../fonts/Upgrade-Light.woff2') format('woff2'),
+    url('../fonts/Upgrade-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Upgrade-RegularItalic';
+  src: url('../fonts/Upgrade-Italic.eot') format('eot'), url('../fonts/Upgrade-Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-Regular';
+  src: url('../fonts/Upgrade-Regular.eot') format('eot'), url('../fonts/Upgrade-Regular.woff2') format('woff2'),
+    url('../fonts/Upgrade-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Upgrade-BookItalic';
+  src: url('../fonts/Upgrade-Book_Italic.eot') format('eot'), url('../fonts/Upgrade-Book_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Book_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-Book';
+  src: url('../fonts/Upgrade-Book.eot') format('eot'), url('../fonts/Upgrade-Book.woff2') format('woff2'),
+    url('../fonts/Upgrade-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Upgrade-MediumItalic';
+  src: url('../fonts/Upgrade-Medium_Italic.eot') format('eot'),
+    url('../fonts/Upgrade-Medium_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Medium_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-Medium';
+  src: url('../fonts/Upgrade-Medium.eot') format('eot'), url('../fonts/Upgrade-Medium.woff2') format('woff2'),
+    url('../fonts/Upgrade-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Upgrade-SemiboldItalic';
+  src: url('../fonts/Upgrade-Semibold_Italic.eot') format('eot'),
+    url('../fonts/Upgrade-Semibold_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Semibold_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-Semibold';
+  src: url('../fonts/Upgrade-Semibold.eot') format('eot'), url('../fonts/Upgrade-Semibold.woff2') format('woff2'),
+    url('../fonts/Upgrade-Semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Upgrade-BoldItalic';
+  src: url('../fonts/Upgrade-Bold_Italic.eot') format('eot'), url('../fonts/Upgrade-Bold_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Bold_Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Upgrade-Bold';
+  src: url('../fonts/Upgrade-Bold.eot') format('eot'), url('../fonts/Upgrade-Bold.woff2') format('woff2'),
+    url('../fonts/Upgrade-Bold.woff') format('woff');
+}
+
+/* Unique font name */
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Light_Italic.eot') format('eot'),
+    url('../fonts/Upgrade-Light_Italic.woff2') format('woff2'), url('../fonts/Upgrade-Light_Italic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Light.eot') format('eot'), url('../fonts/Upgrade-Light.woff2') format('woff2'),
+    url('../fonts/Upgrade-Light.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Book_Italic.eot') format('eot'), url('../fonts/Upgrade-Book_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Book_Italic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Book.eot') format('eot'), url('../fonts/Upgrade-Book.woff2') format('woff2'),
+    url('../fonts/Upgrade-Book.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Italic.eot') format('eot'), url('../fonts/Upgrade-Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Regular.eot') format('eot'), url('../fonts/Upgrade-Regular.woff2') format('woff2'),
+    url('../fonts/Upgrade-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Medium_Italic.eot') format('eot'),
+    url('../fonts/Upgrade-Medium_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Medium_Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Medium.eot') format('eot'), url('../fonts/Upgrade-Medium.woff2') format('woff2'),
+    url('../fonts/Upgrade-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Semibold_Italic.eot') format('eot'),
+    url('../fonts/Upgrade-Semibold_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Semibold_Italic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Semibold.eot') format('eot'), url('../fonts/Upgrade-Semibold.woff2') format('woff2'),
+    url('../fonts/Upgrade-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Bold_Italic.eot') format('eot'), url('../fonts/Upgrade-Bold_Italic.woff2') format('woff2'),
+    url('../fonts/Upgrade-Bold_Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Upgrade';
+  src: url('../fonts/Upgrade-Bold.eot') format('eot'), url('../fonts/Upgrade-Bold.woff2') format('woff2'),
+    url('../fonts/Upgrade-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
