@@ -24,6 +24,8 @@ import { actions } from 'store/actions/apiActions';
 import { actions as actionsSearch } from 'store/actions/searchActions';
 import { ThemeProvider } from 'styled-components';
 import config from '../../../config';
+import markerIcon from 'common/src/assets/image/brik/values/icons/maps-and-flags.svg';
+import closeIcon from 'common/src/assets/image/brik/values/icons/close.svg';
 
 if (process.browser && process.env.NODE_ENV !== 'development') {
   TagManager.initialize(config.tagManager);
@@ -572,13 +574,19 @@ export default () => {
             {showSellDetails && (
               <div className="map-sell-details">
                 <span onClick={() => setShowSellDetails(false)} className="glyph-icon flaticon-plus-symbol" />
+                
+                <img src={markerIcon} className="markerIcon" />
+
+                <div className="close-button-content"> <img src={closeIcon} className="closeIcon" /> </div>
+
                 <h1>
                   <strong>{sidePanelInfos.adresse}</strong>
                   <br />
+                  <p className="map-sell-address-value"> 59000 Lille </p>
                 </h1>
+                
+                <h2 className="map-sell-property-type">{sidePanelInfos.type}</h2>
                 <hr />
-                <h2>{sidePanelInfos.type}</h2>
-
                 <ul>
                   <li>{sidePanelInfos.surface}m²</li>
                 </ul>
@@ -587,12 +595,13 @@ export default () => {
                 <span className="map-grey-price">{sidePanelInfos.soldFor?.toLocaleString()} €</span>
                 {sidePanelInfos.plusValue && (
                   <span>
-                    <p>Plus value</p>
+                    <p>Plus value <span className="plus-mini-value"> en {sidePanelInfos.ansPlusValue * 12 + sidePanelInfos.moisPlusValue} mois </span> </p> 
+                    <br/>
                     <h3>
                       <span className={sidePanelInfos.plusValue.includes('-') ? 'color-red-map' : 'color-green-map'}>
                         <strong>{sidePanelInfos.plusValue + ' €'}</strong>
                       </span>{' '}
-                      en {sidePanelInfos.ansPlusValue * 12 + sidePanelInfos.moisPlusValue} mois
+                      
                     </h3>
                   </span>
                 )}

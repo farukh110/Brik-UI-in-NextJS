@@ -535,7 +535,7 @@ export default () => {
                   des 12 derniers mois
                 </p>
                 <br/> 
-                <strong>Volume des transactions des 12 derniers mois </strong>  
+                <strong className="transactions-p">Volume des transactions des 12 derniers mois </strong>  
                  <br/>
                 <h1>{transacEvolution?.transaction[0]}</h1>
                 <span> <br/><br/> {transacEvolution?.transaction[1]}% <br/> par rapport aux 12 mois précédents</span>
@@ -543,7 +543,7 @@ export default () => {
 
               <div>
                 <p>
-                  <strong>Volume des transactions des 12 derniers mois </strong>
+                  <strong className="transactions-p">Volume des transactions des 12 derniers mois </strong>
                 </p>
                 <h1>{formatNumber(transacEvolution?.amount[0])}</h1>
                 <span> <br/><br/> {transacEvolution?.amount[1]}% <br/> par rapport aux 12 mois précédents</span>
@@ -551,10 +551,12 @@ export default () => {
             </div>
 
             {/* Transac surface */}
-            <div className="text-center surface-blocs">
+            <div className="text-center surface-main">
               <div className="invest-stats-container">
                 <h1 className="invest-title">
-                  <strong>Transactions par surface</strong> (moyenne sur 5 ans)
+                  <strong>Transactions par surface</strong> 
+                  <br/>
+                  (moyenne sur 5 ans)
                 </h1>
 
                 <ul className="square-progress">
@@ -586,7 +588,7 @@ export default () => {
                 </ul>
               </div>
 
-              <div className="invest-stats-container">
+              <div className="invest-stats-container invest-stats-right">
                 <h1 className="invest-title">
                   <strong>Prix moyen par surface</strong> <br/> (moyenne sur 5 ans)
                 </h1>
@@ -602,7 +604,7 @@ export default () => {
                 <div className="margin-generator"></div>
 
                 <h1 className="text-center">
-                  Pour {surfaceAverageValue[sliderValue / 50 - 1] && surfaceAverageValue[sliderValue / 50 - 1][1]}
+                  Pour <br/> {surfaceAverageValue[sliderValue / 50 - 1] && surfaceAverageValue[sliderValue / 50 - 1][1]}
                   m²
                 </h1>
               </div>
@@ -629,6 +631,49 @@ export default () => {
                 </div>
               </div>
             </div>
+
+            {/* dynamisme */}
+
+            <div className="transaction-list-container">
+             
+            <h1> Dynamisme <strong> a Lille </strong></h1>      
+
+            <div className="arrow_box">
+               
+               <h4> 01 </h4>
+
+               <p> Volume des transactions des 12 derniers mois </p>
+
+            </div>     
+             <br/>
+            <div className="arrow_box">
+               
+               <h4> 01 </h4>
+
+               <p> Volume des transactions des 12 derniers mois </p>
+
+            </div>  
+
+            <br/>
+
+             <div className="arrow_box">
+               
+               <h4> 01 </h4>
+
+               <p> Volume des transactions des 12 derniers mois </p>
+
+            </div>  
+
+            <br/>
+
+            <div class="gradient-box">
+            <p class="info-title"> Synthese  </p>
+            <p>Avec plus de % des ventes effectuées,<strong> le mois de Juillet</strong> 
+            semble être le mois où les ventes sont le plus conclues dans cette zone.</p>
+            </div>      
+
+            </div>
+
           </div>
 
           <SideMenu slug={currentSlug} />

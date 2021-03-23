@@ -1077,7 +1077,68 @@ export const ResetCSS = createGlobalStyle`
     width: 41%;
     margin-right: 60px;
     vertical-align: top;
+    padding-bottom: 48px;
   }
+
+  .transaction-list-container
+  {
+     margin-left: 28px;
+  }
+
+  .arrow_box {
+	position: relative;
+	background: #FFFFFF;
+	border-left: 6px solid #185490;
+  border-radius: 10px;
+  padding: 15px;
+  width: 98%;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 4%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #ffffff;
+	border-width: 0px;
+	margin-left: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-top-color: #ffffff;
+	border-width: 15px;
+	margin-left: -36px;
+}
+
+.gradient-box
+{
+  vertical-align: top;
+    width: 98%;
+    display: inline-block;
+    margin-left: 0px;
+    color: #FFF;
+    padding: 10px 20px 10px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    line-height: 24px;
+    background: rgb(253,107,153);
+    background: -moz-linear-gradient(274deg,rgba(253,107,153,1) 0%,rgba(222,132,210,1) 50%,rgba(194,142,253,1) 100%);
+    background: -webkit-linear-gradient(
+274deg
+,rgba(253,107,153,1) 0%,rgba(222,132,210,1) 50%,rgba(194,142,253,1) 100%);
+    background: linear-gradient(
+274deg
+,rgba(253,107,153,1) 0%,rgba(222,132,210,1) 50%,rgba(194,142,253,1) 100%);
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd6b99",endColorstr="#c28efd",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fd6b99",endColorstr="#c28efd",GradientType=1);
+}
 
   @media screen and (max-width: 1280px) {
     .invest-row{
@@ -1511,10 +1572,27 @@ export const ResetCSS = createGlobalStyle`
 
   .color-green-map{
     color:#B2DD62;
+    background: #B2DD62;
+    padding: 8px;
+    border-radius: 10px;
   }
+
+  .color-green-map strong
+  {
+    color: #fff !important;
+  } 
+
   .color-red-map{
     color:#dd6262;
+    background: #dd6262;
+    padding: 8px;
+    border-radius: 10px;
   }
+   
+  .color-red-map strong
+  {
+    color: #fff !important;
+  } 
 
   .blur{
     filter: blur(5px);
@@ -1660,6 +1738,22 @@ export const ResetCSS = createGlobalStyle`
     color:#1A202C;
   }.transactions-surface div p strong{ font-weight:500; color: #888F9D !important; }
 
+  .transactions-p
+  {
+     color: #777F90;
+     font-size: 16px;
+  }
+
+  .surface-main .invest-title
+  {
+     padding-top: 0px !important;
+  }
+   
+  .surface-main .invest-stats-right
+  {
+      padding-bottom: 0px !important; 
+  } 
+
   .invest-stats-container{
     margin-top:30px;
   }
@@ -1783,6 +1877,46 @@ export const ResetCSS = createGlobalStyle`
   .plusvalue-container p{
     font-size:18px;
     color:#1A202C;
+  }
+   
+  .plus-value-table tr
+  {
+      background: #F5F5F5;
+      border-bottom: 20px solid #fff;
+      border-radius: 10px;
+  } 
+  
+  .plus-value-table tr td
+  {
+     width: 20%;
+  }
+
+  .plus-value-table .tr-border
+  {
+    border-right: 1px solid #E3E3E4;
+  }
+
+  .plus-value-table tr td .plus-value
+  {
+    color: #B2DD62;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  .plus-value-table tr td p
+  {
+     margin-top: 0px;
+     margin-bottom: 0px;
+     color: #B7B7B7; 
+  }
+
+  .plus-value-table tr td h4
+  {
+     margin-top: 0px;
+     margin-bottom: 0px;
+     color: #185490;
+     font-weight: 500;
+     font-size: 20px;
   }
 
   .stats-evolution h1{
@@ -2028,7 +2162,7 @@ export const ResetCSS = createGlobalStyle`
         position: relative;
         display: block;
         content: "";
-        width: 50%;
+        width: 42%;
         height: 100%;
       }
       
@@ -2049,13 +2183,13 @@ export const ResetCSS = createGlobalStyle`
   // themes
   .tgl-light {
     + .tgl-btn {
-      background: #f0f0f0;
+      background: #E6E6E6;
       border-radius: 2em;
-      padding: 2px;
+      padding: 5px;
       transition: all .4s ease;
       &:after {
         border-radius: 50%;
-        background: #fff;
+        background: #BFC2C8;
       }
     }
     
@@ -2390,17 +2524,21 @@ export const ResetCSS = createGlobalStyle`
       background:#fff;
       box-shadow: 0px 3px 6px #00000029;
       height:60px;
-      width:225px;
+      width:260px;
       right: 35px;
       text-align:center;
       padding-top: 12px;
+      border-radius: 10px;
     }
 
     .map-settings p{
       font-size:11px;
       font-weight:bold;
-      color:#1D2B47;
+      color:#777F90;
       display:inline-block;
+      float: left;
+      margin-left: 14px;
+      text-transform: uppercase;
     }
 
     .map-settings .tgl-light + .tgl-btn{
@@ -2416,17 +2554,21 @@ export const ResetCSS = createGlobalStyle`
       background:#fff;
       box-shadow: 0px 3px 6px #00000029;
       height:90px;
-      width:225px;
+      width:260px;
       right: 35px;
       text-align:center;
       padding-top: 12px;
+      border-radius: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .map-price-range p{
       font-size:11px;
       font-weight:bold;
-      color:#1D2B47;
+      color: #777F90;
       display:inline-block;
+      text-transform: uppercase;
     }
 
     .map-price-range > div > div.rc-slider-rail{
@@ -2447,8 +2589,54 @@ export const ResetCSS = createGlobalStyle`
       bottom:0;
       top:59px;
     }
+
+    .map-sell-details strong
+    {
+       font-weight: 600;
+       font-size: 16px;
+       color: #1D2B47;
+    }
+
+    .map-sell-details .map-sell-property-type
+    {
+       font-size: 14px;
+       text-transform: capitalize;
+       font-weight: 500;
+       color: #B2B7C1; 
+    }
+
+    .map-sell-details .map-sell-address-value
+    {
+      color: #4C576D;
+      margin-top: 0px;
+      font-weight: 400;
+      font-size: 16px;
+    }
+
     .map-sell-details .glyph-icon{
       display:none;
+    }
+
+    .map-sell-details .markerIcon
+    {
+       filter: none;
+       margin-bottom: 5px;
+       width: 40px;  
+    }
+
+    .map-sell-details .close-button-content
+    {
+      margin-top: 0px !important;
+       width: 40px;
+       height: 40px;
+       background: #D3DFEA;
+       float: right;
+       margin-right: 20px;
+    }
+
+    .map-sell-details .close-button-content .closeIcon
+    {
+       filter: none; 
     }
 
     .map-sell-details img{
@@ -2477,7 +2665,7 @@ export const ResetCSS = createGlobalStyle`
     }
 
     .map-sell-details p{
-      color: #185490;
+      color: #1D2B47;
       font-weight:bold;
       font-size:14px;
       margin-top:21px;
@@ -2515,18 +2703,25 @@ export const ResetCSS = createGlobalStyle`
     }
 
     .map-sell-details div{
-      position:absolute;
+      ${'' /* position:absolute; */}
       bottom:0;
       left:-12px;
-      width:calc(100% + 12px);
+      width:calc(85% + 12px);
       height:40px;
       background:#185490;
-      text-align:center;
-      font-weight:400;
-      cursor:pointer;
-      font-size:14px;
-      color:#fff;
-      padding-top:10px;
+      text-align: center;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 14px;
+      color: #fff;
+      padding-top: 12px;
+      border-radius: 10px;
+      margin-top: 40px;
+      }
+
+    .plus-mini-value 
+    {
+      font-weight: 500;
     }
 
     /* map marker */

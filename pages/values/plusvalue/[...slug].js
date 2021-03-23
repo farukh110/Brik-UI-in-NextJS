@@ -29,6 +29,7 @@ import { actions as actionsSearch } from 'store/actions/searchActions';
 import { ThemeProvider } from 'styled-components';
 import { Grid, Typography, makeStyles, List, ListItem, ListItemText, Button, Hidden } from '@material-ui/core';
 import config from '../../../config';
+import bellIcon from 'common/src/assets/image/brik/values/icons/bell.svg';
 
 if (process.browser && process.env.NODE_ENV !== 'development') {
   TagManager.initialize(config.tagManager);
@@ -256,6 +257,12 @@ export default () => {
         </span>
       </td>
       <td>
+
+      </td>
+      <td>
+        
+      </td>
+      <td>
         {int2.format(item.valeur_fonciere)}
         <span className="result-undertext-nm">{item.date_mutation_mois_format}</span>
       </td>
@@ -402,20 +409,20 @@ export default () => {
                 data-tip="Bientôt disponible !"
                 data-iscapture="true"
               >
+               <img className="bellIcon" src={bellIcon} />
                 Créer une alerte
               </span>
             </div>
             <ReactTooltip id="main" multiline={true} />
 
             <div className="fullaccess-results">
-              <h1 className="small-text">
-                Transactions <strong>les plus proches</strong>
-              </h1>
-
+              
               <table className="table-transactions">
                 <thead>
                   <tr>
                     <th colSpan="1">Adresse</th>
+                    <th colSpan="1"> Surface </th>
+                    <th colSpan="1"> Date </th>
                     <th colSpan="1">Date d'achat</th>
                     <th colSpan="1">Prix de revente</th>
                     <th colSpan="1">Plus-value</th>
@@ -453,9 +460,11 @@ export default () => {
 
                 <div className="unlock-premium">
                   <h1 className="soon-plus-value">
-                    Bientôt disponible : la plus value projetée sur
-                    <strong> 5 ans</strong>
+                    Bientôt disponible : la plus value <br/> projetée sur
+                    <strong> 5 ans</strong>, passez au
+                    <strong> Premium ! </strong>
                   </h1>
+                  <button class="btn-blue-package"> Passer au premium </button>
                 </div>
               </div>
             </div>
@@ -475,6 +484,65 @@ export default () => {
                   <List>{itemsClose}</List>
                 </Grid>
               </Hidden>
+
+              <div>
+                
+                <table className="plus-value-table">
+                    
+                    <tr>
+                        
+                        <td> <div className="tr-border"> <p> Villa </p> <br/> <h4> Bondues </h4> </div> </td>
+                        <td> <div className="tr-border"> <p> Prix d'acahat moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
+                        <td> <div className="tr-border"> <p> Prix de revente moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
+                        <td> <p> Plus-value </p> <br/> <h4> <span className="plus-value"> +14 <sup> % </sup> </span> 212500 C </h4> </td>
+                        <td> <span
+                            className="btn-blue cursor-disable"
+                            data-for="main"
+                            data-tip="Bientôt disponible !"
+                            data-iscapture="true"
+                          >
+                            Etudier cette zone
+                          </span> </td>
+
+                    </tr>
+
+                    <tr>
+                        
+                        <td> <div className="tr-border"> <p> Villa </p> <br/> <h4> Bondues </h4> </div> </td>
+                        <td> <div className="tr-border"> <p> Prix d'acahat moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
+                        <td> <div className="tr-border"> <p> Prix de revente moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
+                        <td> <p> Plus-value </p> <br/> <h4> <span className="plus-value"> +14 <sup> % </sup> </span> 212500 C </h4> </td>
+                        <td> <span
+                            className="btn-blue cursor-disable"
+                            data-for="main"
+                            data-tip="Bientôt disponible !"
+                            data-iscapture="true"
+                          >
+                            Etudier cette zone
+                          </span> </td>
+
+                    </tr>
+
+                    <tr>
+                        
+                        <td> <div className="tr-border"> <p> Villa </p> <br/> <h4> Bondues </h4> </div> </td>
+                        <td> <div className="tr-border"> <p> Prix d'acahat moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
+                        <td> <div className="tr-border"> <p> Prix de revente moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
+                        <td> <p> Plus-value </p> <br/> <h4> <span className="plus-value"> +14 <sup> % </sup> </span> 212500 C </h4> </td>
+                        <td> <span
+                            className="btn-blue cursor-disable"
+                            data-for="main"
+                            data-tip="Bientôt disponible !"
+                            data-iscapture="true"
+                          >
+                            Etudier cette zone
+                          </span> </td>
+
+                    </tr>
+
+                </table>
+
+              </div>
 
               <Accordion allowZeroExpanded>{accordionNearbyItems}</Accordion>
             </div>
