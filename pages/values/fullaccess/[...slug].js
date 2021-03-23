@@ -534,7 +534,45 @@ const FullAccess = () => {
               <div className="searchbar-parent">
                 <SearchbarValue />
               </div>
+              
             )}
+
+            {/* Results table */}
+
+            <div className="fullaccess-results">
+              <h1 className="small-text">
+                Transactions <strong>les plus proches</strong>
+              </h1>
+
+              <table className="table-transactions transactions-info-table">
+                <thead>
+                  <tr>
+                    <th colSpan="1">Adresse</th>
+                    <th colSpan="1"> Type de bien </th>
+                    <th colSpan="1"> Surface </th>
+                    <th colSpan="1">Date</th>
+                    <th colSpan="1">Prix du m²</th>
+                    <th colSpan="1">Prix de vente</th>
+                  </tr>
+                </thead>
+                <tbody>{itemsTable}</tbody>
+              </table>
+
+              {/* Limited access: Create account to see more. Shows only if disconnected */}
+              {fetchError && (
+                <div className="restricted-to-members">
+                  <h1>Accès limité</h1>
+                  <hr />
+                  <p>Pour voir plus de transactions, créer un compte, c'est gratuit !</p>
+                  <Link href="/register" className="menu-register-btn">
+                    <span className="glyph-icon flaticon-user" /> Créer un compte <strong>gratuit</strong>
+                  </Link>
+                </div>
+              )}
+
+              {/* Results accordion for mobile */}
+              <Accordion allowZeroExpanded>{accordionItems}</Accordion>
+            </div>
 
             {/* The div under will show if user is not logged in  */}
             {fetchError && (
