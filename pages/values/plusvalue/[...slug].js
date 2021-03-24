@@ -489,56 +489,7 @@ export default () => {
                 
                 <table className="plus-value-table">
                     
-                    <tr>
-                        
-                        <td> <div className="tr-border"> <p> Villa </p> <br/> <h4> Bondues </h4> </div> </td>
-                        <td> <div className="tr-border"> <p> Prix d'acahat moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
-                        <td> <div className="tr-border"> <p> Prix de revente moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
-                        <td> <p> Plus-value </p> <br/> <h4> <span className="plus-value"> +14 <sup> % </sup> </span> 212500 C </h4> </td>
-                        <td> <span
-                            className="btn-blue cursor-disable"
-                            data-for="main"
-                            data-tip="Bientôt disponible !"
-                            data-iscapture="true"
-                          >
-                            Etudier cette zone
-                          </span> </td>
-
-                    </tr>
-
-                    <tr>
-                        
-                        <td> <div className="tr-border"> <p> Villa </p> <br/> <h4> Bondues </h4> </div> </td>
-                        <td> <div className="tr-border"> <p> Prix d'acahat moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
-                        <td> <div className="tr-border"> <p> Prix de revente moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
-                        <td> <p> Plus-value </p> <br/> <h4> <span className="plus-value"> +14 <sup> % </sup> </span> 212500 C </h4> </td>
-                        <td> <span
-                            className="btn-blue cursor-disable"
-                            data-for="main"
-                            data-tip="Bientôt disponible !"
-                            data-iscapture="true"
-                          >
-                            Etudier cette zone
-                          </span> </td>
-
-                    </tr>
-
-                    <tr>
-                        
-                        <td> <div className="tr-border"> <p> Villa </p> <br/> <h4> Bondues </h4> </div> </td>
-                        <td> <div className="tr-border"> <p> Prix d'acahat moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
-                        <td> <div className="tr-border"> <p> Prix de revente moyen </p> <br/> <h4> 212500 C </h4> </div> </td>
-                        <td> <p> Plus-value </p> <br/> <h4> <span className="plus-value"> +14 <sup> % </sup> </span> 212500 C </h4> </td>
-                        <td> <span
-                            className="btn-blue cursor-disable"
-                            data-for="main"
-                            data-tip="Bientôt disponible !"
-                            data-iscapture="true"
-                          >
-                            Etudier cette zone
-                          </span> </td>
-
-                    </tr>
+                    
 
                 </table>
 

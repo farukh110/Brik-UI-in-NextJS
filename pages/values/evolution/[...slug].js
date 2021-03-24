@@ -425,7 +425,7 @@ const Evolution = () => {
                 </div>
               </div>
             </div>
-            <PlacesSuggestions />
+            {/* <PlacesSuggestions /> */}
           </div>
 
           <SideMenu slug={currentSlug} />

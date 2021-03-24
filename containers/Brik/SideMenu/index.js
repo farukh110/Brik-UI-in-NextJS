@@ -40,17 +40,17 @@ const SideMenu = (props) => {
           </li>
         </NextLink>
 
-        <NextLink href={valuesCarteeUrl}>
-          <li className={router.pathname == valuesCarteeUrl.replace(currSlug, '/[...slug]') ? 'menu-active' : ''}>
-            <img className="sidemenu-icon" src={mapIcon}></img>
-            Carte
-          </li>
-        </NextLink>
-
         <NextLink href={valuesPlusvalueUrl}>
           <li className={router.pathname == valuesPlusvalueUrl.replace(currSlug, '/[...slug]') ? 'menu-active' : ''}>
             <img className="sidemenu-icon" src={plusvalueIcon}></img>
             Plus value
+          </li>
+        </NextLink>
+
+        <NextLink href={valuesCarteeUrl}>
+          <li className={router.pathname == valuesCarteeUrl.replace(currSlug, '/[...slug]') ? 'menu-active' : ''}>
+            <img className="sidemenu-icon" src={mapIcon}></img>
+            Carte
           </li>
         </NextLink>
 

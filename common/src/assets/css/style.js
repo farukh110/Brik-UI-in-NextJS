@@ -1042,7 +1042,7 @@ export const ResetCSS = createGlobalStyle`
   .invest-surface h1{
     font-size:30px;
     color: #1A202C;
-    font-weight:400;
+    font-weight:600;
   }
   .lite-text{
     color:#B7B7B7;
@@ -1074,8 +1074,8 @@ export const ResetCSS = createGlobalStyle`
     background: #fff;
     padding: 40px 10px;
     border-radius: 5px;
-    width: 41%;
-    margin-right: 60px;
+    width: 47%;
+    margin-right: 8px;
     vertical-align: top;
     padding-bottom: 48px;
   }
@@ -1200,7 +1200,7 @@ export const ResetCSS = createGlobalStyle`
   .invest-title{
     font-size: 30px;
     color: #1A202C;
-    font-weight: 400;
+    font-weight: 600;
     margin-bottom:0px;
     text-align:left;
     margin: 0 auto;
@@ -1213,13 +1213,18 @@ export const ResetCSS = createGlobalStyle`
 
   .invest-stats-container h1{
     font-size:18px;
-    font-weight:300;
+    font-weight:400;
     margin-bottom:30px;
+  }
+
+  .invest-transaction-small
+  {
+     color: #777F90;
   }
 
   .invest-stats-container h1 strong{
     font-size:18px;
-    font-weight:400;
+    font-weight:600;
   }
 
   .invest-stats-container .invest-title
@@ -1629,7 +1634,7 @@ export const ResetCSS = createGlobalStyle`
 
   .transactions-filters h1{
     font-size:30px;
-    font-weight:400;
+    font-weight:600;
     width:70%;
     display:inline-block;
     color:#1A202C;
@@ -2505,7 +2510,7 @@ export const ResetCSS = createGlobalStyle`
 
     .map-container{
       padding-left:240px;
-      margin-bottom: 70px;
+      ${'' /* margin-bottom: 70px; */}
     }
 
     .map-icon-black{
@@ -2588,6 +2593,7 @@ export const ResetCSS = createGlobalStyle`
       padding:25px 0px 0px 25px;
       bottom:0;
       top:59px;
+      height: 100%;
     }
 
     .map-sell-details strong

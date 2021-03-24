@@ -556,7 +556,7 @@ export default () => {
                 <h1 className="invest-title">
                   <strong>Transactions par surface</strong> 
                   <br/>
-                  (moyenne sur 5 ans)
+                  <div className="invest-transaction-small">(moyenne sur 5 ans)</div>
                 </h1>
 
                 <ul className="square-progress">
@@ -590,7 +590,7 @@ export default () => {
 
               <div className="invest-stats-container invest-stats-right">
                 <h1 className="invest-title">
-                  <strong>Prix moyen par surface</strong> <br/> (moyenne sur 5 ans)
+                  <strong>Prix moyen par surface</strong> <br/> <div className="invest-transaction-small">(moyenne sur 5 ans)</div>
                 </h1>
                 <h1 className="text-center">Prix moyen par surface</h1>
                 <h4 className="color-blue mgauto text-center">
