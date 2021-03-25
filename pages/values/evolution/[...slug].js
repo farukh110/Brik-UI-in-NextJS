@@ -273,7 +273,7 @@ const Evolution = () => {
 
                 <div className="evolution-msquare-right">
                   <div className="year-selector">
-                    <span
+                    <span id="first-span"
                       onClick={() => setDiffSelectedYear('n-1')}
                       className={diffSelectedYear == 'n-1' ? 'year-active' : ''}
                     >
@@ -286,6 +286,7 @@ const Evolution = () => {
                       3 ans
                     </span>
                     <span
+                     id="last-span"
                       onClick={() => setDiffSelectedYear('n-5')}
                       className={diffSelectedYear == 'n-5' ? 'year-active' : ''}
                     >

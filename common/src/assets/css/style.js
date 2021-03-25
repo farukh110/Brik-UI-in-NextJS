@@ -2419,22 +2419,45 @@ export const ResetCSS = createGlobalStyle`
       margin:0 auto;
     }
 
-    .year-active{
+    ${'' /* .year-active{
       color:#fff;
       background:#1A202C;
-    }
+    } */}
+
+    ${'' /* .evolution-msquare-right .year-selector span
+    {
+      background: #D3DFEA !important;
+    } */}
 
     .evolution-msquare-right .year-selector span,  .year-selector span{
       display:inline-block;
       padding:5px 10px;
-      border:1px solid #B7B7B7;
-      border-radius:5px;
+      border:1px solid #FFFFFF;
+      border-radius:0px;
       font-size:12px;
-      color:#B7B7B7;
-      margin-left:10px;
+      color:#FFFFFF;
+      margin-left:-1px;
       cursor:pointer;
+      background: #D3DFEA;
+    }
+    
+    #first-span
+    {
+       border-top-left-radius: 8px;
+       border-bottom-left-radius: 8px;
     }
 
+    #last-span
+    {
+       border-top-right-radius: 8px;
+       border-bottom-right-radius: 8px;
+    }
+
+    .year-active 
+    {
+     color: #fff;
+     background: #185490 !important;
+    }
 
     .invest-surface .unlock-premium{
       position:relative;
