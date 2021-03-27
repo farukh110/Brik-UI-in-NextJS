@@ -20,6 +20,7 @@ import axios from 'axios';
 import { useRequestUser } from 'common/src/hooks/useRequestUser';
 import Link from 'common/src/components/Link';
 import DatePickerInput from 'common/src/components/DatePicker/DatePickerInput';
+import Select from 'common/src/components/Select/index';
 import { Range } from 'rc-slider';
 import 'react-datepicker/dist/react-datepicker.css';
 import TagManager from 'react-gtm-module';
@@ -32,7 +33,8 @@ import {
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
 import config from '../../../config';
-
+import caretIcon from 'common/src/assets/image/brik/values/icons/caret.svg';
+ 
 if (process.browser && process.env.NODE_ENV !== 'development') {
   TagManager.initialize(config.tagManager);
 }
@@ -539,10 +541,42 @@ const FullAccess = () => {
 
             {/* Results table */}
 
-            <div className="fullaccess-results">
+            <div className="fullaccess-results full-access-container">
               <h1 className="small-text">
-                Transactions <strong>les plus proches</strong>
+              <strong> Toutes less transaction </strong> a Lille
               </h1>
+
+              <button className="btn-filter"> Filter <img src={caretIcon} className="caretIcon"/> </button>
+
+              <br/><br/>
+
+              <div className="filter-main-row">
+
+              
+
+              <div class="fullaccess-sorting">
+              
+              <p>   <Select/> </p>
+
+              <p>   <Select/> </p>
+ 
+              <p> Date de vente du : </p>
+
+              <p>   <DatePickerInput
+                          onChange={(e) => handleChangeDateStart(e)}
+                          value={filterParams.date_mutation_min}
+                        /> </p>
+
+              <p> au </p>
+
+              <p>   <DatePickerInput
+                          onChange={(e) => handleChangeDateStart(e)}
+                          value={filterParams.date_mutation_min}
+                        /> </p>
+              
+              </div>
+
+              </div>
 
               <table className="table-transactions transactions-info-table">
                 <thead>
@@ -587,7 +621,7 @@ const FullAccess = () => {
             )}
 
             {/* Header and filters  */}
-            {!fetchError && (
+             {/* {!fetchError && (
               <div className="fullaccess-filters">
                 <h1>
                   Toutes les transactions
@@ -703,8 +737,8 @@ const FullAccess = () => {
                 <span className="btn-blue fullaccess-show-filter" onClick={() => setShowFilter(!showFilter)}>
                   {!showFilter ? 'Voir les filtres' : 'Cacher les filtres'}
                 </span>
-              </div>
-            )}
+              </div> 
+            )} */}
 
             {!fetchError && (
               <div className="fullaccess-results">

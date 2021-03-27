@@ -1362,6 +1362,68 @@ export const ResetCSS = createGlobalStyle`
     opacity: 1;
   }
 
+  .full-access-container strong 
+  {
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .full-access-container .btn-filter
+  {
+       background: #777F90;
+       border: 1px solid #777F90;
+       color: #FFFFFF;
+       border-radius: 5px;
+       height: 40px;
+       padding: 10px 15px;
+       padding-left: 15px;
+       text-align: left;
+  }
+
+  .full-access-container .btn-filter .caretIcon
+  {
+       width: 7px;
+       margin-left: 30px;
+}
+
+.full-access-container .MuiInputAdornment-root.MuiInputAdornment-positionEnd {
+    border-left: 1px solid #D8D8D8 !important;
+    height: 20px !important;
+}
+
+  .full-access-container .MuiFormControl-marginNormal {
+    margin-top: -12px;
+  }
+
+  ${'' /* .full-access-container .filter-main-row select
+  {
+      width: 200px;
+      height: 45px;
+      border: 1px solid #D8D8D8;
+      color: #D8D8D8;
+  } */}
+
+  .full-access-container .select-field__wrapper.css-2b097c-container {
+    width: 200px;
+    color: #D8D8D8;
+}
+
+.full-access-container .css-1wa3eu0-placeholder
+{
+    color: #D8D8D8;
+}
+
+  .full-access-container .makeStyles-input-2 
+  {
+    width: 100px;
+    color: #D8D8D8;
+  }
+
+  .full-access-container .filter-main-row .MuiIconButton-root
+  {
+     color: #D8D8D8;
+  }
+
   .fullaccess-results table{
     width:100%;
     border-collapse: collapse;
